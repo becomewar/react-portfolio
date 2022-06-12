@@ -64,7 +64,7 @@ const Home = () => {
                     <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={30} />
                     </h1>
                     <h2>Fullstack Developer / Cybersecurity student.</h2>
-                    <Link to="/contact" className='flat-button'>CONTATO</Link>
+                    <Link to="/contato" className='flat-button'>CONTATO</Link>
                 </div>
             </div>
             <Loader type='pacman' />

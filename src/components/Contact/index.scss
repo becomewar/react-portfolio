@@ -73,3 +73,54 @@
       margin-right: 10px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .contact-form {
+      width: 300px;
+      margin-top: 20px;
+      margin-left: -19%;
+    
+      ul {
+        padding: 0;
+        margin: 0;
+    
+        li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          margin-bottom: 10px;
+          opacity: 0;
+          overflow: hidden;
+          display: block;
+          clear: both;
+          position: relative;
+          animation: fadeInUp 2s 2s;
+          animation-fill-mode: forwards;
+        }
+    
+        li.half {
+          width: 49%;
+          margin-left: 2%;
+          float: left;
+          clear: none;
+    
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    
+      input[type='text'],
+      input[type='email'] {
+        text-align: center;
+      }
+    
+      textarea {
+        text-align: center;
+      }
+    
+      .flat-button {
+        margin-right: 38%;
+      }
+    }
+  }
