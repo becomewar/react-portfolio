@@ -227,7 +227,7 @@
   }
 
   .container.skills-page {
-    top: 20%;
+    top: 35%;
 
     h1 {
       margin-top: auto;
@@ -296,7 +296,7 @@
   }
 
   .container.skills-page {
-    top: 35%;
+    top: 40%;
 
     h1 {
       margin-top: 30%;
@@ -338,11 +338,5 @@
     h1 {
       lefT: -10%;
     }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .container.skills-page {
-    top: 40%;
   }
 }
