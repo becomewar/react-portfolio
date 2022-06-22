@@ -8,7 +8,7 @@ const Layout = () => {
     <div className="App">
       <div>
       <div className='overlay'></div>
-        <video loop autoPlay muted id="bg-video">
+        <video loop autoPlay muted playsinline id="bg-video">
           <source src={video} type="video/mp4" />
         </video>
       </div>
