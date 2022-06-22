@@ -74,6 +74,12 @@
       }
     }
 
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
+
     a.active {
       svg {
         color: #20C20E;
@@ -186,7 +192,13 @@
 
       a.contact-link {
         &:after {
-          content: 'CONTATO';
+          content: 'CONTACT';
+        }
+      }
+
+      a.skills-link {
+        &:after {
+          content: 'SKILLS';
         }
       }
 

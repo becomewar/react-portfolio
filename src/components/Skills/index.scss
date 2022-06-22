@@ -1,0 +1,19 @@
+.skills-page {
+    top: 1%;
+
+    .text-zone {
+        h2 {
+            color: #c0baba;
+            font-family: sans-serif;
+            animation: fadeIn 1s 1.1s backwards;
+        }
+
+        .tech {
+            color: #20C20E;
+        }
+
+        a {
+            color: #20C20E;
+        }
+    }
+}
