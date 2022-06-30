@@ -5,27 +5,30 @@ import './index.scss'
 
 const Layout = () => {
   return (
-    <div className="App">
-      <div>
-      <div className='overlay'></div>
-        <video loop autoPlay muted playsinline id="bg-video">
-          <source src={video} type="video/mp4" />
-        </video>
-      </div>
+    <>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <div className="App">
+        <div className='container video'>
+          <div className='overlay'></div>
+          <video loop autoPlay muted playsInline id="bg-video">
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>
 
-      <Sidebar />
-      <div className="page">
-        <span className="tags top-tags">&lt;body&gt;</span>
+        <Sidebar />
+        <div className="page">
+          <span className="tags top-tags">&lt;body&gt;</span>
 
-        <Outlet />
-        
-        <span className="tags bottom-tags">
-          &lt;/body&gt;
-          <br />
-          <span className="bottom-tag-html">&lt;/html&gt;</span>
-        </span>
+          <Outlet />
+
+          <span className="tags bottom-tags">
+            &lt;/body&gt;
+            <br />
+            <span className="bottom-tag-html">&lt;/html&gt;</span>
+          </span>
+        </div>
       </div>
-    </div>
+      </>
   )
 }
 
