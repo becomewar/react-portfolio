@@ -72,7 +72,7 @@ const Skills = () => {
                         <span className="tech"> Docker</span> e
                         <span className="tech"> Design Patterns</span>.
                         Você pode visitar meu <a href="https://www.linkedin.com/in/diegohoc/">
-                        Linkedin</a> para mais detalhes, ou visualizar meu curriculo. 
+                        Linkedin</a> para mais detalhes, ou visualizar meu <a href="https://drive.google.com/file/d/1_OfazSK6PUblLYwiAxujK6h1Gu7pPyUK/view">Curriculo</a>. 
                     </p>
                 </div>
             </div>
