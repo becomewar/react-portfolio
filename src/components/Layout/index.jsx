@@ -11,7 +11,7 @@ const Layout = () => {
         <div className='container video'>
           <div className='overlay'></div>
           <video loop autoPlay muted playsInline id="bg-video">
-            <source src={video} type="video/mp4" />
+            <source src={video} type="viddeo/mp4" />
           </video>
         </div>
 
