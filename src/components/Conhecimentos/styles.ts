@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  width: 100%;
+  width: 95%;
 
   > section {
     margin-top: 5rem;
