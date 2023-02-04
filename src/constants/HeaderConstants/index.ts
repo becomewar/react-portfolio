@@ -1,4 +1,4 @@
-import { NavbarDataTypes } from "../models";
+import { NavbarDataTypes } from "@/components/Header/models";
 
 export const NavbarData: NavbarDataTypes[] = [
   {

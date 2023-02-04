@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-import { useThemeContext } from "../../hooks/useThemeContext";
-import { NavbarData } from "./static/data";
+import { useThemeContext } from "@/hooks/useThemeContext";
+
+import { MoonIcon, SunIcon } from "./assets";
+import { NavbarData } from "./static";
 
 import "./styles.scss";
-import { MoonIcon, SunIcon } from "./assets/svg/HeaderSvgIcons";
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
