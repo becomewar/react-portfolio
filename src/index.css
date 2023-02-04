@@ -61,10 +61,6 @@ body.dark .home__social:hover {
   color: hsl(var(--hue), var(--sat), 90%);
 }
 
-body.dark .home__img {
-  box-shadow: inset 9px 10px 10px 0.5px rgba(244, 244, 247, 0.21);
-}
-
 body.dark .contact__form-input {
   background-color: hsl(var(--hue), var(--sat), 20%);
   color: var(--title-color);
