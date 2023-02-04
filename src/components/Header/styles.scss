@@ -123,7 +123,7 @@
 
     .slider {
       position: absolute;
-      right: 50px;
+      right: 3.125rem;
     }
 
     .switch-icon {
@@ -150,8 +150,8 @@
 .toggle-switch {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 25px;
+  width: 3.125rem;
+  height: 1.562rem;
   margin: 0 0.75rem;
 
   input[type="checkbox"] {
@@ -175,8 +175,8 @@
     content: "";
     left: 2px;
     top: 2px;
-    width: 21px;
-    height: 21px;
+    width: 1.312rem;
+    height: 1.312rem;
     background-color: var(--body-color);
     border-radius: 50%;
     transition: transform 0.3s ease;

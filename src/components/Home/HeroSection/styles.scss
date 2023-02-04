@@ -14,7 +14,7 @@
 .home__subtitle::before {
   content: "";
   position: absolute;
-  width: 70px;
+  width: 4.375rem;
   height: 1px;
   background-color: var(--text-color);
   left: 0;
@@ -22,12 +22,6 @@
 }
 
 .home__description {
-  min-width: 400px;
+  min-width: 25rem;
   margin-bottom: var(--mb-3);
-}
-
-@media screen and (max-width: 768px) {
-  .home__data {
-    grid-column: 1/3;
-  }
 }

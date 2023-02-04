@@ -1,7 +1,8 @@
 import { Fade, Rotate } from "react-awesome-reveal";
-import "./styles.scss";
 import { Link } from "react-scroll";
+
 import { ArrowIcon } from "./assets";
+import "./styles.scss";
 
 export default function HeroSection() {
   return (
@@ -23,7 +24,7 @@ export default function HeroSection() {
 
       <Fade delay={600} triggerOnce>
         <Link to="contact" className="button button--flex">
-          Me diga oi!
+          Diga oi!
           <ArrowIcon />
         </Link>
       </Fade>
