@@ -1,5 +1,7 @@
-import { Rotate } from "react-awesome-reveal";
+import { Fade, Rotate } from "react-awesome-reveal";
 import "./styles.scss";
+import { Link } from "react-scroll";
+import { ArrowIcon } from "./assets";
 
 export default function HeroSection() {
   return (
@@ -7,6 +9,24 @@ export default function HeroSection() {
       <Rotate triggerOnce>
         <h1 className="home__title">Diego Costa</h1>
       </Rotate>
+
+      <Fade triggerOnce>
+        <h3 className="home__subtitle">Fullstack Developer</h3>
+      </Fade>
+
+      <Fade delay={300} triggerOnce>
+        <p className="home__description">
+          Sou um desenvolvedor apaixonado em me desafiar com objetivos novos e
+          complexos.
+        </p>
+      </Fade>
+
+      <Fade delay={600} triggerOnce>
+        <Link to="contact" className="button button--flex">
+          Me diga oi!
+          <ArrowIcon />
+        </Link>
+      </Fade>
     </div>
   );
 }
