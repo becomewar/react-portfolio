@@ -10,6 +10,7 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
+  --body-dropdown-hover: hsl(var(--hue), var(--sat), 90%);
   --container-color: #fff;
   --box-shadow-img: inset 9px 10px 10px 0.5px rgba(0, 0, 10, 0.21);
 
@@ -51,6 +52,8 @@ body.dark {
   --title-color-dark: hsl(var(--hue), var(--sat), 100%);
   --text-color: hsl(var(--hue), var(--sat), 70%);
   --body-color: hsl(var(--hue), var(--sat), 10%);
+  --body-dropdown-color: hsl(var(--hue), var(--sat), 20%);
+  --body-dropdown-hover: hsl(var(--hue), var(--sat), 10%);
   --container-color: hsl(var(--hue), var(--sat), 20%);
 }
 
