@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import { BoosterProvider } from "./hooks/useThemeContext";
@@ -10,6 +11,7 @@ export default function Page() {
 
         <main className="main">
           <Home />
+          <About />
         </main>
       </div>
     </BoosterProvider>
