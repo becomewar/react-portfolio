@@ -1,0 +1,1 @@
+export { PageIcon } from "./AboutSvgIcons";

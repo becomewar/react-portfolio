@@ -1,0 +1,88 @@
+.home__container {
+  row-gap: 7rem;
+
+  .home__content {
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  .home__img {
+    background: url(@/assets/character.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 18.75rem;
+    height: 18.75rem;
+    order: 1;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home__container {
+    .home__content {
+      grid-template-columns: 100px repeat(2, 1fr);
+      column-gap: 1.25rem;
+    }
+
+    .home__subtitle::before {
+      width: 42px;
+      top: 0.8rem;
+    }
+
+    .home__description {
+      max-width: initial;
+      margin-bottom: var(-mb-2-5);
+    }
+
+    .home__img {
+      width: 15.625rem;
+      height: 15.625rem;
+    }
+
+    .home__scroll {
+      margin-left: 7.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__container {
+    .home__content {
+      grid-template-columns: 0.5fr 3fr;
+      padding-top: 3.5rem;
+    }
+
+    .home__description {
+      min-width: auto;
+    }
+
+    .home__img {
+      order: initial;
+      justify-self: initial;
+    }
+
+    .home__data {
+      grid-column: 1/3;
+    }
+
+    .home__img {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+    .home__scroll {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .home__container {
+    .home__img {
+      width: 11.25rem;
+      height: 11.25rem;
+    }
+  }
+}

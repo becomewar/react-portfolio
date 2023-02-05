@@ -1,0 +1,32 @@
+.home__scroll {
+  margin-left: 9.25rem;
+
+  .wheel {
+    animation: scroll 2s ease infinite;
+  }
+
+  .home__scroll-name {
+    color: var(--title-color);
+    font-weight: var(--font-meduim);
+    margin-right: var(--mb-0-25);
+    margin-left: 2px;
+    position: relative;
+    top: -0.625rem;
+  }
+
+  .home__scroll-arrow {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    position: relative;
+    top: -0.625rem;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(3.75rem);
+  }
+}
