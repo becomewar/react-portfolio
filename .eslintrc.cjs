@@ -30,5 +30,6 @@ module.exports = {
     "react/jsx-no-constructed-context-values": 0,
     "import/extensions": 0,
     "no-console": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
   },
 };
