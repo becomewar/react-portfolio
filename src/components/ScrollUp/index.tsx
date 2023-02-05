@@ -1,6 +1,8 @@
-import { Link } from "react-scroll";
-import "./styles.scss";
 import { useEffect } from "react";
+
+import { Link } from "react-scroll";
+
+import "./styles.scss";
 
 export default function ScrollUp() {
   const scrollListener = (): void => {
