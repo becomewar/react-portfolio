@@ -1,11 +1,14 @@
 import { BoosterProvider } from "./hooks/useThemeContext";
 
-import Qualifications from "./components/Qualifications";
-import Contact from "./components/Contact";
+import ScrollUp from "./components/ScrollUp";
 import Header from "./components/Header";
-import Skills from "./components/Skills";
-import About from "./components/About";
-import Home from "./components/Home";
+import Footer from "./components/Footer";
+
+import Qualifications from "./pages/Qualifications";
+import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 export default function Page() {
   return (
@@ -20,6 +23,8 @@ export default function Page() {
           <Qualifications />
           <Contact />
         </main>
+        <Footer />
+        <ScrollUp />
       </div>
     </BoosterProvider>
   );
