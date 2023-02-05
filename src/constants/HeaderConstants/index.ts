@@ -25,12 +25,12 @@ export const NavbarData: NavbarDataTypes[] = [
     icon: "uil uil-graduation-cap",
     href: "qualification",
   },
-  {
-    id: 5,
-    item: "Projects",
-    icon: "uil uil-briefcase-alt",
-    href: "projects",
-  },
+  // {
+  //   id: 5,
+  //   item: "Projects",
+  //   icon: "uil uil-briefcase-alt",
+  //   href: "projects",
+  // },
   {
     id: 6,
     item: "Contact",
