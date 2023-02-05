@@ -13,12 +13,12 @@ export default function Footer() {
         <ul className="footer__list">
           <li>
             <Link to="about" className="footer__link" spy smooth duration={50}>
-              Sobre
+              About
             </Link>
           </li>
           <li>
             <Link to="skills" className="footer__link" spy smooth duration={50}>
-              Habilidades
+              Skills
             </Link>
           </li>
           <li>
@@ -29,7 +29,7 @@ export default function Footer() {
               smooth
               duration={50}
             >
-              Qualificações
+              Qualifications
             </Link>
           </li>
         </ul>
