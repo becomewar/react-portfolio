@@ -13,7 +13,7 @@ export default function Qualifications() {
   return (
     <section className="qualification section" id="qualification">
       <Slide direction="left" triggerOnce>
-        <h2 className="section__title">Experiência</h2>
+        <h2 className="section__title">Qualificações</h2>
       </Slide>
 
       <Slide direction="right" triggerOnce>
