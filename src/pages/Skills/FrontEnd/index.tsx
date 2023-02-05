@@ -1,7 +1,11 @@
+import { useLanguageContext } from "@/hooks/LanguageContext";
+
 export function FrontEnd() {
+  const { translate } = useLanguageContext();
+
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Desenvolvimento Front-End </h3>
+      <h3 className="skills__title">{translate("SkillsCardFrontTitle")}</h3>
 
       <div className="skills__box">
         <div className="skills__group">
@@ -9,7 +13,9 @@ export function FrontEnd() {
             <i className="bx bx-badge-check" />
             <div>
               <h3 className="skills__name">HTML</h3>
-              <span className="skills__level">Avançado</span>
+              <span className="skills__level">
+                {translate("SkillsAdvanced")}
+              </span>
             </div>
           </div>
 
@@ -17,7 +23,9 @@ export function FrontEnd() {
             <i className="bx bx-badge-check" />
             <div>
               <h3 className="skills__name">Typescript </h3>
-              <span className="skills__level">Avançado</span>
+              <span className="skills__level">
+                {translate("SkillsAdvanced")}
+              </span>
             </div>
           </div>
 
@@ -25,7 +33,9 @@ export function FrontEnd() {
             <i className="bx bx-badge-check" />
             <div>
               <h3 className="skills__name">React</h3>
-              <span className="skills__level">Avançado</span>
+              <span className="skills__level">
+                {translate("SkillsAdvanced")}
+              </span>
             </div>
           </div>
 
@@ -33,7 +43,9 @@ export function FrontEnd() {
             <i className="bx bx-badge-check" />
             <div>
               <h3 className="skills__name">Javascript</h3>
-              <span className="skills__level">Avançado</span>
+              <span className="skills__level">
+                {translate("SkillsAdvanced")}
+              </span>
             </div>
           </div>
         </div>
@@ -43,7 +55,9 @@ export function FrontEnd() {
             <i className="bx bx-badge-check" />
             <div>
               <h3 className="skills__name">CSS</h3>
-              <span className="skills__level">Intermediário</span>
+              <span className="skills__level">
+                {translate("SkillsIntermed")}
+              </span>
             </div>
           </div>
 
@@ -51,7 +65,9 @@ export function FrontEnd() {
             <i className="bx bx-badge-check" />
             <div>
               <h3 className="skills__name">Git</h3>
-              <span className="skills__level">Intermediário</span>
+              <span className="skills__level">
+                {translate("SkillsIntermed")}
+              </span>
             </div>
           </div>
 
@@ -59,7 +75,9 @@ export function FrontEnd() {
             <i className="bx bx-badge-check" />
             <div>
               <h3 className="skills__name">Tailwind</h3>
-              <span className="skills__level">Intermediário</span>
+              <span className="skills__level">
+                {translate("SkillsIntermed")}
+              </span>
             </div>
           </div>
 
@@ -68,7 +86,9 @@ export function FrontEnd() {
 
             <div>
               <h3 className="skills__name">Bootstrap</h3>
-              <span className="skills__level">Iniciante</span>
+              <span className="skills__level">
+                {translate("SkillsBeginner")}
+              </span>
             </div>
           </div>
         </div>

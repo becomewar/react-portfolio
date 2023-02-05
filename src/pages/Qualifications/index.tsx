@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
 
+import { useLanguageContext } from "@/hooks/LanguageContext";
+
 import "./styles.scss";
 
 export default function Qualifications() {
+  const { translate } = useLanguageContext();
   const [toggleTab, setToggleTab] = useState<number>(1);
 
   function toggleTabs(index: number): void {
@@ -13,11 +16,13 @@ export default function Qualifications() {
   return (
     <section className="qualification section" id="qualification">
       <Slide direction="left" triggerOnce>
-        <h2 className="section__title">Qualificações</h2>
+        <h2 className="section__title">{translate("QualificationsTitle")}</h2>
       </Slide>
 
       <Slide direction="right" triggerOnce>
-        <span className="section__subtitle">Minha jornada até aqui</span>
+        <span className="section__subtitle">
+          {translate("QualificationsSubtitle")}
+        </span>
       </Slide>
 
       <div className="qualification__container container">
@@ -31,7 +36,7 @@ export default function Qualifications() {
             onClick={() => toggleTabs(1)}
           >
             <i className="uil uil-graduation-cap qualification__icon" />
-            Educação
+            {translate("QualificationsLeftTitle")}
           </div>
 
           <div
@@ -43,7 +48,7 @@ export default function Qualifications() {
             onClick={() => toggleTabs(2)}
           >
             <i className="uil uil-briefcase-alt qualification__icon" />
-            Experiência
+            {translate("QualificationsRightTitle")}
           </div>
         </div>
 
@@ -58,9 +63,11 @@ export default function Qualifications() {
             >
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualififaction__title">Udemy Course</h3>
+                  <h3 className="qualififaction__title">
+                    {translate("QualificationUdemy")}
+                  </h3>
                   <span className="qualification__subtitle">
-                    Python 3 Avançado (124 horas)
+                    {translate("QualificationPython")}
                   </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" />
@@ -80,9 +87,11 @@ export default function Qualifications() {
                   <span className="qualification__line" />
                 </div>
                 <div>
-                  <h3 className="qualififaction__title">Udemy Course</h3>
+                  <h3 className="qualififaction__title">
+                    {translate("QualificationUdemy")}
+                  </h3>
                   <span className="qualification__subtitle">
-                    Javascript/ Typescript avançado <br /> (145.5 horas)
+                    {translate("QualificationJS")}
                   </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" />
@@ -93,9 +102,11 @@ export default function Qualifications() {
 
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualififaction__title">Udemy Course</h3>
+                  <h3 className="qualififaction__title">
+                    {translate("QualificationUdemy")}
+                  </h3>
                   <span className="qualification__subtitle">
-                    PHP 7 Avançado (33.5 horas)
+                    {translate("QualificationPHP")}
                   </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" />
@@ -115,13 +126,15 @@ export default function Qualifications() {
                   <span className="qualification__line" />
                 </div>
                 <div>
-                  <h3 className="qualififaction__title">Trilíngue</h3>
+                  <h3 className="qualififaction__title">
+                    {translate("QualificationTrilingual")}
+                  </h3>
                   <span className="qualification__subtitle">
-                    Eu falo três linguas. (PT-BR, EN, RU)
+                    {translate("QualificationTrilingualDesc")}
                   </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" />
-                    2014 - Presente
+                    2014 - {translate("QualificationPresentDate")}
                   </div>
                 </div>
               </div>
@@ -139,12 +152,11 @@ export default function Qualifications() {
               <div className="qualification__data">
                 <div>
                   <h3 className="qualififaction__title">
-                    Desenvolvedor Fullstack
+                    {translate("QualificationsSignoWebTitle")}
                   </h3>
                   <span className="qualification__subtitle">
-                    <a href="https://site.signoweb.com.br/">SignoWeb </a>|
-                    Software house em que fui responsavel pela manutenção e
-                    desenvolvimento de sistemas com MERN Stack.
+                    <a href="https://site.signoweb.com.br/">SignoWeb </a>|{" "}
+                    {translate("QualificationsSignoWebDesc")}
                   </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" />
@@ -165,15 +177,15 @@ export default function Qualifications() {
                 </div>
                 <div>
                   <h3 className="qualififaction__title">
-                    Desenvolvedor Front-End
+                    {translate("QualificationsEloRocketTitle")}
                   </h3>
                   <span className="qualification__subtitle">
-                    <a href=" ">EloRocket </a>| Neste Projeto, sou responsavel
-                    pelo desenvolvimento front-end de um e-commerce em React.
+                    <a href=" ">EloRocket </a> |{" "}
+                    {translate("QualificationsEloRocketDesc")}
                   </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" />
-                    {` 10/04/22 - Presente`}
+                    {` 10/04/22 - ${translate("QualificationPresentDate")}`}
                   </div>
                 </div>
               </div>
@@ -182,12 +194,11 @@ export default function Qualifications() {
                 <div>
                   <h3 className="qualififaction__title">Freelance</h3>
                   <span className="qualification__subtitle">
-                    Como freelancer, trabalho como fullstack em pequenas
-                    aplicações e sistemas.
+                    {translate("QualificationsFreelancerDesc")}
                   </span>
                   <div className="qualification__calender">
                     <i className="uil uil-calender" />
-                    {` 01/22 - Presente`}
+                    {` 01/22 - ${translate("QualificationPresentDate")}`}
                   </div>
                 </div>
                 <div>

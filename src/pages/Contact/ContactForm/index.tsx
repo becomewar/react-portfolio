@@ -5,12 +5,14 @@ import { Arrow } from "../assets/ContactSvgIcons";
 import { ContactFormTypes } from "./models";
 
 import "./styles.scss";
+import { useLanguageContext } from "@/hooks/LanguageContext";
 
 export default function ContactForm({ setSent }: ContactFormTypes) {
   const [loading, setLoading] = useState<boolean>(false);
   const aboutRef = useRef<HTMLTextAreaElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const nameRef = useRef<HTMLInputElement>(null);
+  const { translate } = useLanguageContext();
 
   const templateId: string = import.meta.env.VITE_TEMPLATE_ID;
   const serviceId: string = import.meta.env.VITE_SERVICE_ID;
@@ -65,17 +67,19 @@ export default function ContactForm({ setSent }: ContactFormTypes) {
   return (
     <Slide direction="right" triggerOnce>
       <div className="contact__content">
-        <h3 className="contact__title">Escreva para mim sobre seu projeto</h3>
+        <h3 className="contact__title">{translate("ContactRightTitle")}</h3>
 
         <form className="contact__form" onSubmit={sendEmail}>
           <div className="contact__form-div">
-            <label className="contact__form-tag">Nome</label>
+            <label className="contact__form-tag">
+              {translate("ContactNameLabel")}
+            </label>
             <input
               required
               type="text"
               name="name"
               className="contact__form-input"
-              placeholder="Insira seu nome..."
+              placeholder={translate("ContactNamePlaceholder")}
               ref={nameRef}
             />
           </div>
@@ -86,12 +90,14 @@ export default function ContactForm({ setSent }: ContactFormTypes) {
               type="email"
               name="email"
               className="contact__form-input"
-              placeholder="Insira seu email..."
+              placeholder={translate("ContactEmaiPlaceholder")}
               ref={emailRef}
             />
           </div>
           <div className="contact__form-div contact-form-area">
-            <label className="contact__form-tag">Projeto</label>
+            <label className="contact__form-tag">
+              {translate("ContactProjectLabel")}
+            </label>
 
             <textarea
               className="contact__form-input "
@@ -99,13 +105,17 @@ export default function ContactForm({ setSent }: ContactFormTypes) {
               cols={30}
               rows={10}
               required
-              placeholder="Escreva sobre seu projeto.."
+              placeholder={translate("ContactProjectPlaceholder")}
               ref={aboutRef}
             />
           </div>
 
           <button type="submit" className="button button--flex">
-            {loading ? "Enviando..." : " Enviar mensagem"}
+            {loading ? (
+              <>{translate("ContactSubmitLoading")}</>
+            ) : (
+              <>{translate("ContactSubmitButton")}</>
+            )}
             <Arrow />
           </button>
         </form>

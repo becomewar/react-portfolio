@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useThemeContext } from "@/hooks/useThemeContext";
+import { useThemeContext } from "@/hooks/ThemeContext";
 
 import SocialMedias from "./SocialMedias";
 import HeroSection from "./HeroSection";

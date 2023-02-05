@@ -1,7 +1,10 @@
 import { Slide } from "react-awesome-reveal";
 import "./styles.scss";
+import { useLanguageContext } from "@/hooks/LanguageContext";
 
 export default function ContactCard() {
+  const { translate } = useLanguageContext();
+
   return (
     <Slide direction="left" triggerOnce>
       <div className="contact__content">
@@ -18,7 +21,7 @@ export default function ContactCard() {
               className="contact__button"
               rel="noreferrer"
             >
-              Entrar em contato
+              {translate("ContactTitle")}
               <i className="bx bx-right-arrow-alt contact__button-icon" />
             </a>
           </div>
@@ -34,7 +37,7 @@ export default function ContactCard() {
                 className="contact__button"
                 rel="noreferrer"
               >
-                Entrar em contato
+                {translate("ContactTitle")}
                 <i className="bx bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>
@@ -51,7 +54,7 @@ export default function ContactCard() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Entrar em contato
+                {translate("ContactTitle")}
                 <i className="bx bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>

@@ -2,9 +2,13 @@ import { Fade, Rotate } from "react-awesome-reveal";
 import { Link } from "react-scroll";
 
 import { ArrowIcon } from "./assets";
+
 import "./styles.scss";
+import { useLanguageContext } from "@/hooks/LanguageContext";
 
 export default function HeroSection() {
+  const { translate } = useLanguageContext();
+
   return (
     <div className="home__data">
       <Rotate triggerOnce>
@@ -12,19 +16,16 @@ export default function HeroSection() {
       </Rotate>
 
       <Fade triggerOnce>
-        <h3 className="home__subtitle">Fullstack Developer</h3>
+        <h3 className="home__subtitle">{translate("HomeSubtitle")}</h3>
       </Fade>
 
       <Fade delay={300} triggerOnce>
-        <p className="home__description">
-          Sou um desenvolvedor apaixonado em me desafiar com objetivos novos e
-          complexos.
-        </p>
+        <p className="home__description">{translate("HomeDescription")}</p>
       </Fade>
 
       <Fade delay={600} triggerOnce>
         <Link to="contact" className="button button--flex">
-          Diga oi!
+          {translate("HomeButtonContact")}
           <ArrowIcon />
         </Link>
       </Fade>
