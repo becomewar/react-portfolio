@@ -1,4 +1,5 @@
-import { BoosterProvider } from "./hooks/useThemeContext";
+import { LanguageProvider } from "./hooks/LanguageContext";
+import { ThemeProvider } from "./hooks/ThemeContext";
 
 import ScrollUp from "./components/ScrollUp";
 import Header from "./components/Header";
@@ -12,20 +13,22 @@ import Home from "./pages/Home";
 
 export default function Page() {
   return (
-    <BoosterProvider>
-      <div className="App">
-        <Header />
+    <ThemeProvider>
+      <LanguageProvider>
+        <div className="App">
+          <Header />
 
-        <main className="main">
-          <Home />
-          <About />
-          <Skills />
-          <Qualifications />
-          <Contact />
-        </main>
-        <Footer />
-        <ScrollUp />
-      </div>
-    </BoosterProvider>
+          <main className="main">
+            <Home />
+            <About />
+            <Skills />
+            <Qualifications />
+            <Contact />
+          </main>
+          <Footer />
+          <ScrollUp />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
