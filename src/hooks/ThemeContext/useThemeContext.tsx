@@ -1,11 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { ThemeContextProps, ThemeContextValueTypes } from "./models";
 
-export const ThemeContext = createContext<ThemeContextValueTypes>(
+const ThemeContext = createContext<ThemeContextValueTypes>(
   {} as ThemeContextValueTypes
 );
 
-export function BoosterProvider({ children }: ThemeContextProps) {
+export function ThemeProvider({ children }: ThemeContextProps) {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   const toggleIsDarkMode = (): void => {
