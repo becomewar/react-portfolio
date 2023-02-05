@@ -1,19 +1,30 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-import { useThemeContext } from "@/hooks/useThemeContext";
+import { useLanguageContext } from "@/hooks/LanguageContext";
+import { useThemeContext } from "@/hooks/ThemeContext";
 
+import { Locales } from "@/constants/LanguageConstants";
+
+import { GlobeIcon } from "./assets/HeaderSvgIcons";
 import { MoonIcon, SunIcon } from "./assets";
+
 import { NavbarData } from "./static";
 
 import "./styles.scss";
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
+  const [toggleLang, setToggleLang] = useState<boolean>(false);
   const { toggleIsDarkMode, isDarkMode } = useThemeContext();
+  const { handleChangeLanguage } = useLanguageContext();
 
   function handleToggle() {
     setToggleMenu(!toggleMenu);
+  }
+
+  function handleToggleLang() {
+    setToggleLang(!toggleLang);
   }
 
   function headerListener() {
@@ -31,8 +42,8 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="/my-portfolio" className="nav__logo">
-          FullStack
+        <a href=" " className="nav__logo">
+          <i className="bx bxs-skull" />
         </a>
 
         <div className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}>
@@ -53,6 +64,29 @@ export default function Header() {
                 </li>
               );
             })}
+
+            <li className="nav__item switch-lang" onClick={handleToggleLang}>
+              <GlobeIcon />
+
+              {toggleLang && (
+                <div className="dropdown-container">
+                  <div className="dropdown-list">
+                    {Locales.map((lang) => (
+                      <div
+                        className="list-item"
+                        key={lang.code}
+                        onClick={() => {
+                          handleChangeLanguage(lang.code);
+                          setToggleLang(false);
+                        }}
+                      >
+                        <span className={`fi ${lang.flag}`} /> {lang.code}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </li>
 
             <li className="nav__item switch-icon">
               <SunIcon />
