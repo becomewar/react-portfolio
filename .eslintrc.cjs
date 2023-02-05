@@ -29,5 +29,6 @@ module.exports = {
     "jsx-a11y/click-events-have-key-events": 0,
     "react/jsx-no-constructed-context-values": 0,
     "import/extensions": 0,
+    "no-console": 0,
   },
 };
