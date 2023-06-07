@@ -47,8 +47,8 @@ export const languages: Record<TLanguageKey, TLanguage> = {
     EN: "Experience",
   },
   AboutCardExpSubtitle: {
-    BR: "2 anos",
-    EN: "2 years",
+    BR: "3 anos",
+    EN: "3 years",
   },
   AboutCardProjectsTitle: {
     BR: "Completado",
@@ -151,12 +151,12 @@ export const languages: Record<TLanguageKey, TLanguage> = {
     EN: "Software house where I was responsible for the maintenance and development of systems with MERN Stack.",
   },
   QualificationsEloRocketTitle: {
-    BR: "Desenvolvedor Front-End",
-    EN: "Front-End Developer",
+    BR: "Desenvolvedor Full-Stack",
+    EN: "Full-Stack Developer",
   },
   QualificationsEloRocketDesc: {
-    BR: "Neste Projeto, sou responsavel pelo desenvolvimento front-end de um e-commerce em React.",
-    EN: "In this project, I'm responsible for the front-end development of an e-commerce in React.",
+    BR: "Neste projeto, participo ativamente da arquitetura de software e construção de todo o fluxo e desenvolvimento do sistema.",
+    EN: "In this project, I actively participate in the software architecture and construction of the entire system flow and development.",
   },
   QualificationsFreelancerDesc: {
     BR: "Como freelancer, trabalho como fullstack em pequenas aplicações e sistemas.",

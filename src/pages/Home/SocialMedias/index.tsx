@@ -18,7 +18,7 @@ export default function SocialMedias() {
 
       <Fade direction="up" delay={100} triggerOnce>
         <a
-          href="https://github.com/Vrag404"
+          href="https://github.com/d-hcosta"
           className="home_social-icon"
           target="_blank"
           rel="noreferrer"

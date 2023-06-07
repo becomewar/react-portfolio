@@ -43,7 +43,7 @@ export default function Footer() {
             <i className="bx bxl-linkedin" />
           </a>
           <a
-            href="https://github.com/becomewar"
+            href="https://github.com/d-hcosta"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"

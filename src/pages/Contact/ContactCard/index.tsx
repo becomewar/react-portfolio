@@ -47,7 +47,7 @@ export default function ContactCard() {
             <div className="contact__card">
               <i className="bx bxl-discord conact__card-icon" />
               <h3 className="conact__card-title">Discord</h3>
-              <span className="contact__card-data">becomewar#3029</span>
+              <span className="contact__card-data">Vrag#5842</span>
               <a
                 href="https://discordapp.com/users/921538838709534772"
                 className="contact__button"
